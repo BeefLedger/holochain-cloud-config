@@ -1,0 +1,104 @@
+#---------[ agents ]-----------
+
+[[agents]]
+id = "test_agent2"
+name = "HoloTester2"
+public_address = "HcSciuOHrFEqmp6p8soCmX9F9Mt4AkdyuMKtYSjPAkqde9wd66r4Bsw8HESSybz"
+keystore_file = "./agent2-HcSciuOHrFEqmp6p8soCmX9F9Mt4AkdyuMKtYSjPAkqde9wd66r4Bsw8HESSybz.txt"
+
+
+#---------[ hApps ]-----------
+
+[[dnas]]
+id = "observation"
+file = "./happs/observation/dist/observation.dna.json"
+hash = ""
+uuid = "vf_obs"
+
+[[dnas]]
+id = "planning"
+file = "./happs/planning/dist/planning.dna.json"
+hash = ""
+uuid = "vf_plan"
+
+[[dnas]]
+id = "specification"
+file = "./happs/specification/dist/specification.dna.json"
+hash = ""
+uuid = "vf_spec"
+
+[[instances]]
+id = "observation"
+agent = "test_agent2"
+dna = "observation"
+
+  [instances.storage]
+  type = "memory"
+
+[[instances]]
+id = "planning"
+agent = "test_agent2"
+dna = "planning"
+
+  [instances.storage]
+  type = "memory"
+
+[[instances]]
+id = "specification"
+agent = "test_agent2"
+dna = "specification"
+
+  [instances.storage]
+  type = "memory"
+
+[[bridges]]
+caller_id = "planning"
+callee_id = "observation"
+handle = "vf_observation"
+
+[[bridges]]
+caller_id = "planning"
+callee_id = "specification"
+handle = "vf_specification"
+
+[[bridges]]
+caller_id = "observation"
+callee_id = "specification"
+handle = "vf_specification"
+
+#---------[ gateway interfaces ]-----------
+
+[[interfaces]]
+id = "http_interface"
+admin = true
+
+  [interfaces.driver]
+  type = "http"
+  port = 4201
+
+  [[interfaces.instances]]
+  id = "observation"
+  [[interfaces.instances]]
+  id = "planning"
+  [[interfaces.instances]]
+  id = "specification"
+
+[[interfaces]]
+id = "websocket_interface"
+admin = true
+
+  [interfaces.driver]
+  type = "websocket"
+  port = 4202
+
+  [[interfaces.instances]]
+  id = "observation"
+  [[interfaces.instances]]
+  id = "planning"
+  [[interfaces.instances]]
+  id = "specification"
+
+#---------[ misc ]-----------
+
+[logger]
+type = "debug"
