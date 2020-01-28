@@ -3,7 +3,7 @@ Holochain webservice for talking to holochain Holo-REA gateway.
 
 # How to setup
 1. Provision an AWS Ubuntu node.
-`As of 28th Jan 2019 the Holo-REA and NixOS shell contain a lot of of build files (routhly 4GB so it's safer to provision a machine that has at least 8GBs.  for this demo had to increase our AWS machine from a t2.micro to t2.large.`
+`As of 28th Jan 2019 the Holo-REA and NixOS shell contain a lot of of build files (routhly 4GB so it's safer to provision a machine that has at least 16GBs.`
 
 2. Log into your machine with ssh.
 
@@ -30,3 +30,5 @@ Add the following node scripts to the holo-rea package.json folder.
 8. Now start the frist instance with the first Agent ID with "npm run dht:conductor1"
 
 9. Now startt the second instance with the second Agent ID with "dht:conductor2"
+
+Well done you now have 2 holo-rea instances running on AWS.
