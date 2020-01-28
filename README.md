@@ -9,7 +9,6 @@ Holochain webservice for talking to holochain Holo-REA gateway.
 
 3. Install NixOS `curl https://nixos.org/nix/install | sh` then run `. ~/.nix-profile/etc/profile.d/nix.sh`
 Further instructions here if needed: https://developer.holochain.org/docs/install/
-
 You can check if NixOS shell is running by running `nix-shell --version`
 
 4. Clone the Holo-REA project from: https://github.com/holo-rea/holo-rea
