@@ -8,4 +8,5 @@ Holochain webservice for talking to holochain Holo-REA gateway.
 
 2. Log into your machine with ssh.
 
-3. 
+3. Clone the Holo-REA project from: https://github.com/holo-rea/holo-rea
+`git clone https://github.com/holo-rea/holo-rea.git`
