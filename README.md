@@ -16,7 +16,7 @@ You can check if NixOS shell is running by running `nix-shell --version`
 
 5. Enter into the Holo-REA directory then run `nix-shell` this will take a while to run.
 
-6. Now you need to copy the 2 conductor files with their associated Agent keys into the holo-REA repo. The fastest way to do this is to enter into the holo-REA repo and then run `git clone https://github.com/BeefLedger/holochain-webservice.git`
+6. Now you need to copy the 2 conductor files with their associated Agent keys into the holo-REA repo. The fastest way to do this is to enter into the holo-REA repo and then run `git clone https://github.com/BeefLedger/holochain-cloud-config.git`
 
 This allows us to create 2 instances of Holo-REA with 2 different agents on the same machine.  If you would like to create another idenity you can use the hc helper tool. `hc keygen` for further reference you can run `hc --help`. 
 
