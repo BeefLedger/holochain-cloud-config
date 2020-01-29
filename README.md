@@ -1,5 +1,5 @@
-# holochain-webservice
-Holochain webservice for talking to holochain Holo-REA gateway.
+# holochain-cloud-config
+In this repo is the files and test AgentIDs that tell Holochain how to run Holo-REA as a webservice.
 
 # How to setup
 1. Provision an AWS Ubuntu node.
