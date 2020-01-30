@@ -21,13 +21,12 @@ You can check if NixOS shell is running by running `nix-shell --version`
 This allows us to create 2 instances of Holo-REA with 2 different agents on the same machine.  If you would like to create another idenity you can use the hc helper tool. `hc keygen` for further reference you can run `hc --help`. 
 
 7. Now it's time to run the 2 instances in different windows.
-First lets create 2 seperate node scripts. 
-Add the following node scripts to the holo-rea package.json folder that point to the 2 conductor files in the holochain-cloud-config.
+When you cloned the holochain-cloud-config repo in step 6 you there was a package.json file with the following node scripts. 
 
 `"dht:conductor1": "holochain -c ../holochain-cloud-config/conductor-config-Agent1-httpinterface-4101.toml",
 "dht:conductor2": "holochain -c ../holochain-cloud-config/conductor-config-Agent2-httpinterface-4201.toml",`
 
-8. Now start the frist instance with the first Agent ID with "npm run dht:conductor1"
+8. Now start the frist instance with the first Agent ID with "npm run dht:conductor1" `IMPORTANT: Make sure you start the nix-shell from the holo-rea folder before trying to run these node scripts or it won't work`
 And you will see Agent 1 Holo-REA instance 1 running 'http_interface' to port: 4101'
 
 9. Now startt the second instance with the second Agent ID with "npm run dht:conductor2"
