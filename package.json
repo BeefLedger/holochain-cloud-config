@@ -1,0 +1,21 @@
+{
+  "name": "holochain-cloud-config",
+  "version": "1.0.0",
+  "description": "holochain cloud config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dht:conductor1": "holochain -c ./conductor-config-Agent1-httpinterface-4101.toml",
+    "dht:conductor2": "holochain -c ./conductor-config-Agent2-httpinterface-4201.toml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeefLedger/holochain-cloud-config.git"
+  },
+  "author": "Thomas Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeefLedger/holochain-cloud-config/issues"
+  },
+  "homepage": "https://github.com/BeefLedger/holochain-cloud-config#readme"
+}

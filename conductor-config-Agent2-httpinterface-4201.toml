@@ -11,19 +11,19 @@ keystore_file = "./agent2-HcSciuOHrFEqmp6p8soCmX9F9Mt4AkdyuMKtYSjPAkqde9wd66r4Bs
 
 [[dnas]]
 id = "observation"
-file = "./happs/observation/dist/observation.dna.json"
+file = "../holo-rea/happs/observation/dist/observation.dna.json"
 hash = ""
 uuid = "vf_obs"
 
 [[dnas]]
 id = "planning"
-file = "./happs/planning/dist/planning.dna.json"
+file = "../holo-rea/happs/planning/dist/planning.dna.json"
 hash = ""
 uuid = "vf_plan"
 
 [[dnas]]
 id = "specification"
-file = "./happs/specification/dist/specification.dna.json"
+file = "../holo-rea/happs/specification/dist/specification.dna.json"
 hash = ""
 uuid = "vf_spec"
 
